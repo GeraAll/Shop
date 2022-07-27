@@ -73,7 +73,8 @@
 
 .promo__item-banner {
   background: url(../img/main/banner.jpg) no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
   grid-area: banner;
   min-height: 480px;
   font-size: 70px;
@@ -148,7 +149,8 @@
 
 .promo__item-year {
   background: url(../img/main/year.jpg) no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
   grid-area: year;
   font-size: 40px;
   line-height: 120%;
@@ -185,7 +187,6 @@
 .promo__item-ball {
   background: url(../img/main/ball.jpg) no-repeat;
   background-size: 100% 100%;
-  transform: scaleX(-1);
   grid-area: ball;
 }
 

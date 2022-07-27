@@ -13,11 +13,17 @@
 }
 
 .header__logo {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  padding-top: 18px;
+  position: relative;
   grid-area: logo;
+}
+
+.logo {
+  display: flex;
+  width: 190px;
+  height: 41px;
+  background-image: url(../img/header/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .menu {
@@ -188,7 +194,12 @@
 
   .header__logo {
     padding: 0;
+  }
+
+  .logo {
     width: 165px;
+    height: 35px;
+    background-size: 165px 35px;
   }
 
   .header__container {
@@ -275,10 +286,14 @@
   }
 
   .header__logo {
-    padding: 0;
-    max-width: 114px;
     grid-column: span 2;
     grid-row: span 1;
+  }
+
+  .logo {
+    width: 114px;
+    height: 25px;
+    background-size: 114px 25px;
   }
 
   .menu {
