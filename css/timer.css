@@ -1,0 +1,135 @@
+.timer {
+  max-width: 473px;
+  display: flex;
+  align-items: center;
+  align-content: flex-end;
+  flex-direction: column;
+  margin-left: 539px;
+  margin-top: 121px;
+}
+
+.timer__items {
+  display: flex;
+  align-items: center;
+  font-size: 60px;
+}
+
+.timer__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 28px;
+  margin-right: 7px;
+}
+
+.timer__item {
+  position: relative;
+  min-width: 55px;
+  padding-right: 90px;
+  text-align: center;
+}
+
+.timer__item::before {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  left: 102px;
+  bottom: -10px;
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+  .timer {
+    max-width: 314px;
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    flex-direction: column;
+    margin-left: 237px;
+    margin-top: 71px;
+  }
+
+  .timer__items {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+  }
+
+  .timer__text {
+    margin-bottom: 20px;
+    margin-right: 7px;
+  }
+
+  .timer__item {
+    padding-right: 60px;
+  }
+
+  .timer__item::before {
+    left: 76px;
+    bottom: -6px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timer {
+    max-width: 314px;
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    flex-direction: column;
+    margin-left: 103px;
+    margin-top: 88px;
+  }
+
+  .timer__items {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+  }
+
+  .timer__text {
+    font-size: 12px;
+    margin-bottom: 18px;
+    margin-right: -19px;
+  }
+
+  .timer__item {
+    padding-right: 35px;
+  }
+
+  .timer__item::before {
+    left: 53px;
+    bottom: -4px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .timer {
+    max-width: 167px;
+    margin-left: 31px;
+    margin-top: 190px;
+  }
+
+  .timer__items {
+    font-size: 20px;
+  }
+
+  .timer__text {
+    font-size: 8px;
+    margin-bottom: 4px;
+    margin-right: 5px;
+  }
+
+  .timer__item {
+    padding-right: 35px;
+  }
+
+  .timer__item::before {
+    left: 41px;
+    bottom: -1px;
+    font-size: 12px;
+  }
+}

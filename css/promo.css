@@ -1,0 +1,634 @@
+.promo__container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 60px;
+  grid-template-areas:
+    "banner banner banner banner banner banner"
+    "banner banner banner banner banner banner"
+    "book time shoes shoes present present"
+    "shoe shoe shoes shoes notebook notebook"
+    "year year year year girl chemicals"
+    "year year year year girl ball";
+  cursor: pointer;
+}
+
+.promo__item {
+  min-height: 228px;
+  max-width: 100%;
+  color: #ffffff;
+  border-radius: 20px;
+  position: relative;
+  font-weight: 700;
+  line-height: 39px;
+}
+
+.promo__item::after {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  padding: 24px 8px;
+  border-radius: 50%;
+  background: #ffbd13;
+  font-size: 30px;
+}
+
+.promo__text_color_blue {
+  display: flex;
+  flex-direction: column;
+  max-width: 510px;
+  padding: 31px 26px;
+  background: #38c0eb;
+  border-radius: 20px;
+}
+
+.text_style_normal {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 39px;
+}
+
+.text_style_medium {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 39px;
+  margin-bottom: 9px;
+}
+
+.text_style_bold {
+  font-size: 56px;
+  line-height: 67px;
+}
+
+.text_style_red {
+  color: #f91155;
+  text-transform: uppercase;
+}
+
+.promo__text_color_white {
+  max-width: 643px;
+  padding: 34px 43px 30px 39px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.promo__item-banner {
+  background: url(../img/main/banner.jpg) no-repeat;
+  background-size: 100% 100%;
+  grid-area: banner;
+  min-height: 480px;
+  font-size: 70px;
+  padding: 179px 0 0 112px;
+}
+
+.promo__item-book {
+  background: url(../img/main/book.jpg) no-repeat;
+  background-size: 100% 100%;
+  grid-area: book;
+  font-size: 40px;
+  padding: 90px 35px 0 20px;
+}
+
+.promo__item-time {
+  background: url(../img/main/time.jpg) no-repeat;
+  background-size: 100% 100%;
+  grid-area: time;
+  font-size: 30px;
+  padding: 71px 15px 0 14px;
+}
+
+.promo__item-time::after {
+  content: "-25%";
+  bottom: 20px;
+  right: 20px;
+}
+
+.promo__item-shoes {
+  background: url(../img/main/shoes_two.jpg) no-repeat;
+  background-size: 100% 100%;
+  grid-area: shoes;
+  font-size: 40px;
+  line-height: 48px;
+  padding: 330px 20px 0 20px;
+}
+
+.promo__item-present {
+  background: url(../img/main/present.jpg) no-repeat;
+  background-size: 100% 100%;
+  grid-area: present;
+  font-size: 40px;
+  line-height: 50px;
+  padding: 100px 170px 0 40px;
+}
+
+.promo__item-shoe {
+  background: url(../img/main/shoes.jpg) no-repeat;
+  background-size: 100% 100%;
+  grid-area: shoe;
+}
+
+.promo__item-shoe::after {
+  content: "-40%";
+  top: 20px;
+  left: 20px;
+}
+
+.promo__item-notebook {
+  background: url(../img/main/notebook.jpg) no-repeat;
+  background-size: 100% 100%;
+  grid-area: notebook;
+  font-size: 40px;
+  padding: 147px 130px 0 40px;
+}
+
+.promo__item-notebook::after {
+  content: "-15%";
+  bottom: 20px;
+  right: 20px;
+}
+
+.promo__item-year {
+  background: url(../img/main/year.jpg) no-repeat;
+  background-size: 100% 100%;
+  grid-area: year;
+  font-size: 40px;
+  line-height: 120%;
+  padding: 358px 457px 0 50px;
+}
+
+.promo__item-girl {
+  background: url(../img/main/girl.jpg) no-repeat;
+  background-size: 100% 100%;
+  grid-area: girl;
+  font-size: 40px;
+}
+
+.promo__item-girl::after {
+  content: "-55%";
+  bottom: 20px;
+  right: 20px;
+}
+
+.promo__item-chemicals {
+  background: url(../img/main/chemicals.jpg) no-repeat;
+  background-size: 100% 100%;
+  grid-area: chemicals;
+  font-size: 30px;
+  padding: 130px 48px 0 20px;
+}
+
+.promo__item-chemicals::after {
+  content: "-25%";
+  top: 20px;
+  left: 20px;
+}
+
+.promo__item-ball {
+  background: url(../img/main/ball.jpg) no-repeat;
+  background-size: 100% 100%;
+  transform: scaleX(-1);
+  grid-area: ball;
+}
+
+@media (max-width: 1024px) {
+  .promo__container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px 30px;
+    grid-template-areas:
+      "banner banner banner banner"
+      "banner banner banner banner"
+      "book time shoes shoes "
+      "shoe shoe shoes shoes "
+      "present present girl chemicals   "
+      "notebook notebook girl ball   "
+      "year year year year"
+      "year year year year";
+  }
+
+  .promo__item {
+    min-height: 194px;
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .promo__text_color_blue {
+    display: flex;
+    flex-direction: column;
+    max-width: 406px;
+    padding: 24px 25px;
+  }
+
+  .text_style_normal {
+    font-size: 24px;
+  }
+
+  .text_style_medium {
+    font-size: 30px;
+    line-height: 39px;
+    margin-bottom: -5px;
+  }
+
+  .text_style_bold {
+    font-size: 40px;
+    line-height: 67px;
+  }
+
+  .promo__text_color_white {
+    max-width: 513px;
+    padding: 24px 46px 23px 47px;
+  }
+
+  .promo__item-banner {
+    min-height: 314px;
+    font-size: 40px;
+    padding: 92px 0 0 79px;
+    margin-bottom: 28px;
+  }
+
+  .promo__item-book {
+    min-height: 202px;
+    padding: 103px 14px 0 13px;
+  }
+
+  .promo__item-time {
+    min-height: 202px;
+    font-size: 24px;
+    padding: 54px 38px 0 14px;
+  }
+
+  .promo__item-time::after {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .promo__item-shoes {
+    min-height: 418px;
+    padding: 255px 20px 0 20px;
+  }
+
+  .promo__item-shoe::after {
+    top: 10px;
+    left: 10px;
+  }
+
+  .promo__item-present {
+    min-height: 194px;
+    padding: 95px 179px 0 30px;
+  }
+
+  .promo__item-notebook {
+    padding: 119px 154px 0 30px;
+    min-height: 194px;
+  }
+
+  .promo__item-notebook::after {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .promo__item-year {
+    padding: 296px 397px 0 30px;
+    min-height: 418px;
+    margin-top: 28px;
+  }
+
+  .promo__item-girl {
+    min-width: 206px;
+    min-height: 410px;
+  }
+
+  .promo__item-girl::after {
+    bottom: 10px;
+    right: 23px;
+  }
+
+  .promo__item-chemicals {
+    font-size: 20px;
+    padding: 149px 8px 0 7px;
+    min-height: 196px;
+  }
+
+  .promo__item-chemicals::after {
+    top: 10px;
+    left: 10px;
+  }
+
+  .promo__item-ball {
+    min-height: 196px;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo__container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px 20px;
+    grid-template-areas:
+      "banner banner banner banner"
+      "banner banner banner banner"
+      "book time shoes shoes "
+      "shoe shoe shoes shoes "
+      "present present girl chemicals   "
+      "notebook notebook girl ball   "
+      "year year year year"
+      "year year year year";
+  }
+
+  .promo__item {
+    min-width: 140px;
+    min-height: 126px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .promo__item::after {
+    width: 50px;
+    height: 50px;
+    padding: 13px 5px;
+    font-size: 16px;
+  }
+
+  .promo__text_color_blue {
+    display: block;
+    max-width: 360px;
+    padding: 0 10px;
+  }
+
+  .text {
+    font-size: 26px;
+  }
+
+  .text_style_normal {
+    font-size: 20px;
+    line-height: 110%;
+  }
+
+  .text_style_medium {
+    font-size: 16px;
+    line-height: 39px;
+    margin-bottom: 0;
+  }
+
+  .text_style_bold {
+    font-size: 26px;
+    line-height: 61px;
+  }
+
+  .text_style_red {
+    font-size: 20px;
+  }
+
+  .promo__text_color_white {
+    max-width: 347px;
+    padding: 22px 33px 22px 34px;
+  }
+
+  .promo__item-banner {
+    min-height: 280px;
+    max-width: 700px;
+    font-size: 30px;
+    padding: 76px 0 0 80px;
+    margin-bottom: 20px;
+  }
+
+  .promo__item-book {
+    height: 130px;
+    min-width: 140px;
+    padding: 48px 13px 0 10px;
+  }
+
+  .promo__item-time {
+    height: 130px;
+    min-width: 140px;
+    padding: 15px 15px 0 15px;
+  }
+
+  .promo__item-time::after {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .promo__item-shoes {
+    height: 278px;
+    min-width: 380px;
+    padding: 205px 10px 0 10px;
+  }
+
+  .promo__item-shoe {
+    min-width: 300px;
+    min-height: 126px;
+  }
+  .promo__item-shoe::after {
+    top: 10px;
+    left: 10px;
+  }
+
+  .promo__item-present {
+    min-height: 126px;
+    min-width: 300px;
+    padding: 68px 136px 0 20px;
+  }
+
+  .promo__item-notebook {
+    min-height: 126px;
+    min-width: 300px;
+    padding: 81px 120px 0 21px;
+  }
+
+  .promo__item-notebook::after {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .promo__item-year {
+    padding: 245px 327px 0 26px;
+    margin: 0;
+    height: 337px;
+    max-width: 700px;
+  }
+
+  .promo__item-girl {
+    min-width: 182px;
+    min-height: 273px;
+  }
+
+  .promo__item-girl::after {
+    bottom: 10px;
+    right: 23px;
+  }
+
+  .promo__item-chemicals {
+    font-size: 16px;
+    padding: 95px 15px 0 15px;
+    height: 126px;
+  }
+
+  .promo__item-chemicals::after {
+    top: 10px;
+    left: 10px;
+  }
+
+  .promo__item-ball {
+    height: 126px;
+  }
+}
+
+@media (max-width: 320px) {
+  .promo__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-areas:
+      "banner banner "
+      "banner banner"
+      "banner banner"
+      "banner banner"
+      "book time  "
+      "shoe shoe  "
+      "shoes shoes"
+      "shoes shoes"
+      "present present "
+      "notebook notebook "
+      "girl chemicals"
+      "girl ball"
+      "year year ";
+  }
+
+  .promo__item {
+    min-height: 95px;
+    min-width: 130px;
+    border-radius: 8px;
+    line-height: 16px;
+  }
+
+  .promo__item::after {
+    padding: 17px 6px;
+  }
+
+  .promo__text_color_blue {
+    display: block;
+    max-width: 260px;
+    height: 36px;
+    border-radius: 8px;
+    padding: 0 24px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .text_style_normal {
+    font-size: 12px;
+    line-height: 110%;
+  }
+
+  .text_style_medium {
+    font-size: 12px;
+    line-height: 35px;
+    margin-bottom: 0;
+  }
+
+  .text_style_bold {
+    font-size: 16px;
+    line-height: 29px;
+  }
+
+  .text_style_red {
+    font-size: 12px;
+  }
+
+  .promo__text_color_white {
+    max-width: 250px;
+    border-radius: 8px;
+    padding: 7px 41px 7px 41px;
+  }
+
+  .promo__item-banner {
+    min-height: 340px;
+    max-width: 280px;
+    padding: 58px 0 0 29px;
+    font-size: 22px;
+    margin: 0;
+  }
+
+  .promo__item-book {
+    height: 120px;
+    min-width: 130px;
+    padding: 68px 55px 0 10px;
+  }
+
+  .promo__item-time {
+    height: 120px;
+    min-width: 130px;
+    font-size: 12px;
+    padding: 19px 35px 0 10px;
+  }
+
+  .promo__item-time::after {
+    bottom: 5px;
+    right: 5px;
+  }
+
+  .promo__item-shoes {
+    height: 206px;
+    min-width: 280px;
+    padding: 160px 10px 0 10px;
+  }
+
+  .promo__item-shoe {
+    min-width: 280px;
+    min-height: 118px;
+  }
+  .promo__item-shoe::after {
+    top: 5px;
+    left: 5px;
+  }
+
+  .promo__item-present {
+    min-height: 118px;
+    min-width: 280px;
+    font-size: 12px;
+    padding: 88px 89px 0 10px;
+  }
+
+  .promo__item-notebook {
+    min-height: 118px;
+    min-width: 280px;
+    font-size: 12px;
+    padding: 86px 150px 0 10px;
+  }
+
+  .promo__item-notebook::after {
+    bottom: 5px;
+    right: 5px;
+  }
+
+  .promo__item-girl {
+    min-width: 130px;
+    min-height: 195px;
+  }
+
+  .promo__item-girl::after {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .promo__item-chemicals {
+    font-size: 12px;
+    padding: 68px 7px 0 10px;
+    height: 95px;
+  }
+
+  .promo__item-chemicals::after {
+    top: 5px;
+    left: 5px;
+  }
+
+  .promo__item-ball {
+    height: 95px;
+  }
+
+  .promo__item-year {
+    padding: 83px 15px 0 15px;
+    margin: 0;
+    height: 123px;
+    max-width: 280px;
+  }
+}

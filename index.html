@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="preload"
+      href="./font/lato-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./font/lato-bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <script src="./time.js"></script>
+    <title>ShopOnline</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <div class="header__logo">
+            <a href="#">
+              <img src="./img/header/logo.svg" alt="название магазина" />
+            </a>
+          </div>
+          <div class="menu">
+            <div><span class="menu__text"></span></div>
+            <div><button class="menu__btn" type="button">Меню</button></div>
+          </div>
+          <div class="search">
+            <form>
+              <input class="search__input" type="text" placeholder="Я ищу..." />
+              <button class="search__btn" type="submit"></button>
+            </form>
+          </div>
+          <div class="header__profile">
+            <div class="header__profile-icon">
+              <button class="header__btn" type="button">
+                <img
+                  class="header__img"
+                  src="./img/header/person.svg"
+                  alt="профиль пользователя"
+                />
+              </button>
+              <p class="header__text">Профиль</p>
+            </div>
+            <div class="header__profile-icon">
+              <button class="header__btn" type="button">
+                <img
+                  class="header__img"
+                  src="./img/header/shop.svg"
+                  alt="корзина с товарами"
+                />
+              </button>
+              <p class="header__text">Корзина</p>
+            </div>
+            <div class="header__profile-icon">
+              <button class="header__btn" type="button">
+                <img
+                  class="header__img"
+                  src="./img/header/favorite.svg"
+                  alt="избранные товары"
+                />
+              </button>
+              <p class="header__text">Избранное</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="promo">
+        <div class="container promo__container">
+          <a class="promo__item promo__item-banner" href="#">
+            <p>-50% на все ноутбуки</p>
+            <div class="timer">
+              <p class="timer__text">До конца акции:</p>
+              <div class="timer__items">
+                <div class="timer__item timer__days">00</div>
+                <div class="timer__item timer__hours">00</div>
+                <div class="timer__item timer__minutes">00</div>
+              </div>
+            </div>
+          </a>
+          <a class="promo__item promo__item-book" href="#">
+            <p class="promo__text">
+              <span class="text">Книга–</span>
+              <span class="text text_style_normal">лучший подарок</span>
+            </p>
+          </a>
+          <a class="promo__item promo__item-time" href="#">
+            <p>Время скидок!</p>
+          </a>
+          <a class="promo__item promo__item-shoes" href="#">
+            <p class="promo__text promo__text_color_blue">
+              <span class="text text_style_medium">Вторая пара кроссовок</span>
+              <span class="text text_style_bold">в подарок!</span>
+            </p>
+          </a>
+          <a class="promo__item promo__item-present" href="#">
+            <p>Идеи новогодних подарков</p>
+          </a>
+          <a class="promo__item promo__item-shoe" href="#"></a>
+          <a class="promo__item promo__item-notebook" href="#">
+            <p>Выгодно в декабре!</p>
+          </a>
+          <a class="promo__item promo__item-year" href="#">
+            <p class="promo__text promo__text_color_white">
+              <span class="text text_style_red">Новогодние украшения </span>
+            </p>
+          </a>
+          <a class="promo__item promo__item-girl" href="#"></a>
+          <a class="promo__item promo__item-chemicals" href="#">
+            <p>На бытовую химию</p>
+          </a>
+          <a class="promo__item promo__item-ball" href="#"></a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
