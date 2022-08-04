@@ -106,6 +106,33 @@
   }
 }
 
+@media (max-width: 640px) {
+  .timer {
+    margin-left: 80px;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 530px) {
+  .timer {
+    margin-left: 20px;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 440px) {
+  .timer {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .timer {
+    margin-left: -5px;
+    margin-top: 175px;
+  }
+}
+
 @media (max-width: 320px) {
   .timer {
     max-width: 167px;

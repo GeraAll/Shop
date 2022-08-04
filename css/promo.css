@@ -1,6 +1,6 @@
 .promo__container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
   gap: 60px;
   grid-template-areas:
     "banner banner banner banner banner banner"
@@ -159,7 +159,8 @@
 
 .promo__item-girl {
   background: url(../img/main/girl.jpg) no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
   grid-area: girl;
   font-size: 40px;
 }
@@ -192,7 +193,7 @@
 
 @media (max-width: 1024px) {
   .promo__container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(217px, 1fr));
     gap: 22px 30px;
     grid-template-areas:
       "banner banner banner banner"
@@ -408,7 +409,7 @@
   }
 
   .promo__item-shoes {
-    height: 278px;
+    min-height: 278px;
     min-width: 380px;
     padding: 205px 10px 0 10px;
   }
@@ -442,7 +443,7 @@
   .promo__item-year {
     padding: 245px 327px 0 26px;
     margin: 0;
-    height: 337px;
+    min-height: 337px;
     max-width: 700px;
   }
 
@@ -472,10 +473,166 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 640px) {
   .promo__container {
-    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+
+  .promo__text_color_blue {
+    display: flex;
+  }
+
+  .text_style_bold {
+    line-height: 31px;
+  }
+
+  .promo__item {
+    min-height: 110px;
+    min-width: 112px;
+  }
+
+  .promo__item-banner {
+    min-height: 220px;
+    margin: 0;
+  }
+
+  .promo__item-shoes {
+    min-height: 220px;
+    padding: 180px 10px 0 10px;
+  }
+
+  .promo__item-chemicals {
+    padding: 75px 10px 0 10px;
+  }
+
+  .promo__item-year {
+    min-height: 220px;
+    padding: 150px 216px 0 26px;
+  }
+}
+
+@media (max-width: 530px) {
+  .text {
+    font-size: 16px;
+  }
+
+  .promo__item {
+    min-height: 100px;
+    min-width: 100px;
+  }
+
+  .promo__item-banner {
+    min-height: 200px;
+    padding: 40px 0 0 50px;
+  }
+
+  .promo__item-book {
+    max-height: 100px;
+    padding: 37px 13px 0 10px;
+  }
+
+  .promo__item-time {
+    max-height: 100px;
+  }
+
+  .promo__item-time::after {
+    bottom: 2px;
+    right: 2px;
+  }
+
+  .promo__item-shoes {
+    min-height: 200px;
+    padding: 140px 10px 0 10px;
+  }
+
+  .promo__item-shoe {
+    min-height: 100px;
+  }
+
+  .promo__item-present {
+    padding: 68px 20px 0 10px;
+  }
+
+  .promo__item-chemicals {
+    font-size: 14px;
+    padding: 70px 10px 0 10px;
+  }
+
+  .promo__item-year {
+    min-height: 200px;
+    padding: 130px 106px 0 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo__item {
+    min-height: 80px;
+    min-width: 90px;
+  }
+
+  .promo__text_color_blue {
+    padding: 0 5px;
+  }
+
+  .promo__text_color_white {
+    padding: 15px 20px 15px 20px;
+  }
+
+  .promo__item-banner {
+    min-height: 160px;
+  }
+
+  .promo__item-shoes {
+    padding: 120px 10px 0 10px;
+  }
+
+  .promo__item-notebook {
+    padding: 81px 60px 0 11px;
+  }
+
+  .promo__item-year {
+    min-height: 160px;
+    padding: 100px 120px 0 26px;
+  }
+
+  .promo__item-chemicals {
+    padding: 55px 5px 0 5px;
+  }
+}
+
+@media (max-width: 440px) {
+  .promo__item {
+    min-height: 70px;
+    min-width: 80px;
+  }
+
+  .promo__text_color_blue {
+    padding: 0 10px;
+  }
+
+  .text_style_medium {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .promo__item-banner {
+    min-height: 140px;
+    padding: 30px 0 0 30px;
+  }
+
+  .promo__item-shoes {
+    padding: 110px 10px 0 10px;
+  }
+
+  .promo__item-year {
+    min-height: 140px;
+    padding: 80px 100px 0 26px;
+  }
+}
+
+@media (max-width: 400px) {
+  .promo__container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     grid-template-areas:
       "banner banner "
       "banner banner"
@@ -490,6 +647,46 @@
       "girl chemicals"
       "girl ball"
       "year year ";
+  }
+
+  .promo__item {
+    min-height: 150px;
+    min-width: 130px;
+  }
+
+  .promo__item-banner {
+    min-height: 300px;
+    font-size: 22px;
+  }
+
+  .promo__item-book {
+    padding: 97px 13px 0 10px;
+  }
+
+  .promo__item-shoes {
+    padding: 90px 10px 0 10px;
+  }
+
+  .promo__item-present {
+    padding: 115px 20px 0 10px;
+  }
+
+  .promo__item-notebook {
+    padding: 120px 60px 0 11px;
+  }
+
+  .promo__item-year {
+    padding: 80px 75px 0 15px;
+  }
+
+  .promo__item-chemicals {
+    padding: 115px 5px 0 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  .promo__container {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   }
 
   .promo__item {
@@ -545,7 +742,6 @@
     min-height: 340px;
     max-width: 280px;
     padding: 58px 0 0 29px;
-    font-size: 22px;
     margin: 0;
   }
 

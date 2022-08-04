@@ -17,6 +17,10 @@
   grid-area: logo;
 }
 
+.title {
+  display: none;
+}
+
 .logo {
   display: flex;
   width: 190px;
@@ -80,7 +84,7 @@
 }
 
 .search__input {
-  width: 757px;
+  min-width: 757px;
   height: 54px;
   padding: 15px 40px;
   color: #8f8f8f;
@@ -171,7 +175,7 @@
   }
 
   .search__input {
-    width: 700px;
+    min-width: 700px;
   }
 
   .search__btn {
@@ -239,7 +243,7 @@
 
   .search__input {
     font-size: 12px;
-    width: 540px;
+    min-width: 540px;
     height: 42px;
     padding: 15px 30px;
   }
@@ -274,12 +278,53 @@
   }
 }
 
-@media (max-width: 320px) {
-  .header {
-    padding-top: 25px;
-    padding-bottom: 34px;
+@media (max-width: 640px) {
+  .search__input {
+    min-width: 440px;
   }
 
+  .header__profile {
+    padding-left: 189px;
+  }
+}
+@media (max-width: 530px) {
+  .search__input {
+    min-width: 330px;
+  }
+
+  .header__profile {
+    padding-left: 80px;
+  }
+}
+@media (max-width: 480px) {
+  .search {
+    margin-left: -50px;
+  }
+
+  .search__input {
+    min-width: 300px;
+  }
+
+  .header__profile {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 440px) {
+  .logo {
+    width: 145px;
+    background-size: 140px 35px;
+  }
+
+  .search__input {
+    min-width: 260px;
+  }
+
+  .header__profile {
+    padding-left: 10px;
+    gap: 20px;
+  }
+}
+@media (max-width: 400px) {
   .header__container {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 15px 0;
@@ -288,6 +333,45 @@
   .header__logo {
     grid-column: span 2;
     grid-row: span 1;
+  }
+
+  .menu {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .search {
+    margin-left: 0;
+    justify-self: left;
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .search__input {
+    min-width: 320px;
+  }
+
+  .header__profile {
+    padding-left: 1px;
+    justify-self: right;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .header__img {
+    height: 25px;
+    width: 25px;
+  }
+
+  .header__text {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    padding-top: 25px;
+    padding-bottom: 34px;
   }
 
   .logo {
@@ -304,8 +388,6 @@
     font-size: 12px;
     padding: 6px 15px 9px 6px;
     border-radius: 5px;
-    grid-column: span 1;
-    grid-row: span 1;
   }
 
   .menu__btn {
@@ -328,16 +410,9 @@
     width: 8px;
   }
 
-  .search {
-    margin-left: 0;
-    justify-self: left;
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-
   .search__input {
     font-size: 8px;
-    max-width: 280px;
+    min-width: 280px;
     height: 30px;
     padding: 9px 15px;
   }
@@ -359,22 +434,9 @@
 
   .header__profile {
     gap: 26px;
-    padding-left: 1px;
-    justify-self: right;
-    grid-column: 2;
-    grid-row: 2;
   }
 
   .header__btn {
     font-size: 12px;
-  }
-
-  .header__img {
-    height: 25px;
-    width: 25px;
-  }
-
-  .header__text {
-    display: none;
   }
 }
